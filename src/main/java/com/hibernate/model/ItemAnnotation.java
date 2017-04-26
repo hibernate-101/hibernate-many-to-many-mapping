@@ -20,6 +20,7 @@ public class ItemAnnotation {
 	
 	@Column(name="item_desc")
 	private String description;
+	
 
 	/**
 	 * @return the id
@@ -62,6 +63,16 @@ public class ItemAnnotation {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "ItemAnnotation [id=" + id + ", price=" + price
+				+ ", description=" + description + "]";
+	}
+	
 	
 	
 

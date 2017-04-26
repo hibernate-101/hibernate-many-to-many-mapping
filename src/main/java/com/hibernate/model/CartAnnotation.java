@@ -73,6 +73,15 @@ public class CartAnnotation {
 	public void setItems(Set<ItemAnnotation> items) {
 		this.items = items;
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "CartAnnotation [id=" + id + ", total=" + total + "]";
+	}
+	
 	
 	
 	
